@@ -21,7 +21,7 @@ for w in omega:
 H_22 = np.array(H_22)
 H_12 = np.array(H_12)
 
-
+#Method 1
 import scipy.signal
 
 magnitude_H22 = np.abs(H_22)
@@ -31,10 +31,11 @@ print("peak_indices:", peak_indices)
 natural_frequencies = omega[peak_indices] 
 peak_magnitudes= np.abs(H_22)[peak_indices]  
 
-# 打印峰值
+
 print("natural_frequencies:", natural_frequencies)
 print("peak_magnitudes:", peak_magnitudes)
 
+#OR Method 2
 
 damping_ratios = []
 
